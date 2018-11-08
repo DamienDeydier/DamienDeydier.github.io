@@ -1,0 +1,197 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background-color: moccasin;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: #D2B48C;
+}
+
+.header h1 {
+    font-size: 65px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #a83d21;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #aaa;
+    color: black;
+}
+
+
+img{
+    border: 10px solid #C7A579; 
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style Titres */
+
+h1{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h3{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    }
+h4{
+    display: table;
+    white-space: nowrap;
+    text-align: center;
+}
+h4:before, h4:after {
+  content: "";
+  display: table-cell;
+  width: 50%;
+  background: linear-gradient(#000, #000) repeat-x left center;
+  background-size: 1px 1px;
+}
+
+p{
+    text-align: justify;
+}
+
+table {
+    border-style:solid; 
+    border-color:#962B1B;
+    width: 90%;
+    margin: auto;
+ }
+
+ th{
+    background-color:#962B1B;
+    color: #F8DFB2;
+    width:50%;
+    text-align: center;
+ }
+
+ td { 
+    background-color:#F8DFB2;
+    width:50%;
+    text-align: justify;
+    vertical-align: top;
+    padding: 5px;
+    margin: 10px;
+ }
+
+
+.row {
+    display: flex;
+    
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+.leftcolumn {   
+    flex: 60%;
+    padding: 10px 10px;
+}
+
+/* Right column */
+.rightcolumn {
+    flex: 40%;
+    background-color: moccasin;
+    padding:10px 10px;
+}
+
+.videosocca{
+     width: 425px;
+     height: 225px;
+     padding: 3px;
+     border: 1px;
+    }
+
+.card {
+    background-color: #D2B48C;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pagefb {   
+     color: #3351A2;
+     text-decoration: none;
+}
+
+.pagefb:hover{
+     text-decoration: underline;
+     color: white;
+}
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: right;
+    background-color: #a83d21;
+    margin-top: 20px;
+}
+
+.contacteznous{
+   text-decoration: none;
+   color: black;
+}
+
+.contacteznous:hover{
+    color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+    .row{   
+        flex-direction: column;
+    }
+
+    .videosocca{
+        max-width: 100%;
+        min-height: auto;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+
+}

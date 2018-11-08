@@ -1,0 +1,179 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background-color: moccasin;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: #D2B48C;
+}
+
+.header h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #a83d21;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #aaa;
+    color: black;
+
+}
+
+h2 {  
+     font-family: Arial, sans-serif;    
+
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: moccasin;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.imgpippo{
+    background-color: #a83d21;
+    width: auto;
+    padding: 3px;
+    border: 1px 
+
+}
+
+.videoedhec{
+
+    width: 500px;
+    height: 300px;
+    padding: 3px;
+    border: 1px 
+}
+
+.photodesauteurs{
+    max-width: 80%;
+    height: auto;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #D2B48C;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.liste {
+    list-style-type: none;
+    
+}
+
+.liste a {
+      text-decoration: none;
+      color: black;
+}
+
+.liste a:hover{
+
+    color: white;
+}
+
+.pagefb {
+     
+     text-decoration: none;
+     color: black;
+
+}
+
+.pagefb:hover{
+
+    color: white;
+}
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: right;
+    background-color: #a83d21;
+    margin-top: 20px;
+}
+
+.contacteznous{
+   
+   text-decoration: none;
+   color: black;
+}
+
+.contacteznous:hover{
+
+    color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+
+    .imgpippo{
+
+           max-width: 100%;
+           height: auto;
+     }
+
+
+    .videoedhec{
+
+           max-width: 100%;
+           min-height: auto;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+    
+    
+
+}
